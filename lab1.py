@@ -5,13 +5,10 @@ def max_list_iter(int_list):  # must use iteration not recursion
         raise ValueError
     if len(int_list) == 0:
         return None
-    for i in range(len(int_list) - 1):
-        if int_list[i] > int_list[i + 1]:
+    max_value = int_list[0]
+    for i in range(len(int_list)):
+        if max_value < int_list[i]:
             max_value = int_list[i]
-            i += 1
-        else:
-            max_value = int_list[i + 1]
-            i += 1
     return max_value
     
 
