@@ -13,7 +13,7 @@ def max_list_iter(int_list):  # must use iteration not recursion
             max_value = int_list[i + 1]
             i += 1
     return max_value
-    pass
+    
 
 
 def reverse_rec(int_list):  # must use recursion
@@ -25,7 +25,7 @@ def reverse_rec(int_list):  # must use recursion
         return int_list
     else:
         return reverse_rec(int_list[1:]) + [int_list[0]]
-    pass
+   
 
 
 def bin_search(target, low, high, int_list):  # must use recursion
@@ -53,4 +53,4 @@ def bin_search(target, low, high, int_list):  # must use recursion
         return None
 
 
-pass
+
